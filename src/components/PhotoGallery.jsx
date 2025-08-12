@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 import image2 from "../images/sevgilimle2.jpg";
 import image3 from "../images/seymaya1.jpg";
@@ -34,11 +34,14 @@ export default function PhotoGallery() {
     };
   }, []);
 
-  const ref = (el) => {
-    if (el && observer.current) {
-      observer.current.observe(el);
-    }
-  };
+  const ref = useCallback(
+    (el) => {
+      if (el && observer.current) {
+        observer.current.observe(el);
+      }
+    },
+    [] // boş bağımlılık, fonksiyon sadece bir kere oluşturulur
+  );
 
   return (
     <div className="w-full max-w-4xl mx-auto mt-20 px-4">
@@ -51,7 +54,7 @@ export default function PhotoGallery() {
             key={idx}
             data-index={idx}
             ref={ref}
-            className={`rounded-xl shadow-lg shadow-pink-400 overflow-hidden shadow-lg transform transition-all duration-700 ${
+            className={`rounded-xl shadow-pink-400 overflow-hidden shadow-lg transform transition-all duration-700 ${
               visible.includes(String(idx))
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"
