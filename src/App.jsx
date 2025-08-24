@@ -49,7 +49,7 @@ export default function App() {
       <PhotoGallery />
       <HowWeMet />
       <div className="mt-16 text-lg text-gray-800">
-        <p className="mb-4 text-lg text-gray-800 p-4 text-shadow-2xl font-semibold text-shadow-gray">
+        <p className="mb-4 text-lg lg:text-xl text-gray-800 p-4 lg:px-32 text-center text-shadow-2xl font-semibold text-shadow-gray">
           Her şey yağmurlu bir Manavgat gününde telefonuma gelen bir bildirim
           ile başladı. Şu günlerde X olarak tabir edilen Twitter üzerinden bir
           takip isteği aldım. Tanrı benim alın yazımı modern bir şekilde yazmış
@@ -58,7 +58,7 @@ export default function App() {
           ediyorum. Çok şükür ki birlikte büyüyüp birlikte yaş alıyoruz. Dilerim
           nice yaşları da birlikte karşılarız.
         </p>
-        <p className="mb-4 text-md font-semibold text-gray-800 p-4 text-shadow-md">
+        <p className="mb-4 text-md font-semibold text-gray-800 p-4 text-shadow-md text-lg lg:text-xl">
           Doğum günün kutlu olsun sevgilim... nice birlikte senelerimize
           inşallah. Ömrümde bir seni sevdim,
           <span className="text-red-600 text-4xl"> seviyorum ,seveceğim!</span>
