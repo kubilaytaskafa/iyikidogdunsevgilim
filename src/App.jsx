@@ -36,17 +36,13 @@ export default function App() {
       </button>
 
       <h1 className="text-4xl mt-12 md:text-5xl font-bold mb-2 drop-shadow-xl">
-        Bir Prensesin Doğuşunun üzerinden
+        Tam 💖 7669 Gün Önce Bir Güzel Dünyaya Geldi...
       </h1>
-      <p className="text-3xl md:text-4xl font-semibold mb-4 drop-shadow">
-        💖 7669 gün geçti...
-      </p>
-
-      <p className="text-2xl font-bold  md:text-2xl mb-10 mt-4 drop-shadow">
+      <p className="text-2xl font-bold  md:text-2xl mb-6 mt-4 drop-shadow">
         İyi ki Doğdun Güzelim! 🎉🎂🎈
       </p>
 
-      <div className="animate-pulse text-xl mt-10 font-bold">
+      <div className="animate-pulse text-xl mt-4 font-bold">
         Hazırlayan: Kubişin 💘
       </div>
 
