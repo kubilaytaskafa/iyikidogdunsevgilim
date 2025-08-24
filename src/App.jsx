@@ -16,13 +16,6 @@ export default function App() {
 
   const buguneKadarGecenGun = bugun.diff(dogumGunu, "day");
 
-  const buYilDogumGunu = dayjs(`${bugun.year()}-08-25`);
-  const gelecekDogumGunu =
-    bugun.isAfter(buYilDogumGunu) === true
-      ? dayjs(`${bugun.year() + 1}-08-25`)
-      : buYilDogumGunu;
-  const kalanGun = gelecekDogumGunu.diff(bugun, "day");
-
   useEffect(() => {
     const interval = setInterval(() => {
       setBugun(dayjs());
@@ -61,11 +54,13 @@ export default function App() {
         💖 {buguneKadarGecenGun} gün geçti...
       </p>
 
-      <p className="text-xl md:text-2xl mb-10 drop-shadow">
-        🎉 Yeni yaşına {kalanGun} gün kaldı!
+      <p className="text-2xl font-bold  md:text-2xl mb-10 mt-4 drop-shadow">
+        İyi ki Doğdun Güzelim! 🎉🎂🎈
       </p>
 
-      <div className="animate-pulse text-lg mt-10">Hazırlayan: Kubişin 💘</div>
+      <div className="animate-pulse text-xl mt-10 font-bold">
+        Hazırlayan: Kubişin 💘
+      </div>
 
       <PhotoGallery />
       <HowWeMet />
