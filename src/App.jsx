@@ -40,7 +40,7 @@ export default function App() {
       </h1>
 
       <p className="text-3xl md:text-4xl font-semibold mb-4 drop-shadow">
-        💖 7670 gün geçti...
+        💖 7669 gün geçti...
       </p>
 
       <p className="text-2xl font-bold  md:text-2xl mb-10 mt-4 drop-shadow">
