@@ -1,5 +1,5 @@
-import { useRef, useEffect, useState } from "react";
-import dayjs from "dayjs";
+import { useRef, useState } from "react";
+
 import "dayjs/locale/tr";
 import PhotoGallery from "./components/PhotoGallery.jsx";
 import music from "./audios/Nerdeysen.mp3";
@@ -9,19 +9,8 @@ import ThenAndNow from "./components/ThenAndNow.jsx";
 import SeninSiirin from "./components/SeninSiirin.jsx";
 
 export default function App() {
-  const dogumGunu = dayjs("2004-08-25");
-  const [bugun, setBugun] = useState(dayjs());
   const [muzikCal, setMuzikCal] = useState(true);
   const audioRef = useRef(null);
-
-  const buguneKadarGecenGun = bugun.diff(dogumGunu, "day");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setBugun(dayjs());
-    }, 1000 * 60);
-    return () => clearInterval(interval);
-  }, []);
 
   const toggleMusic = () => {
     if (muzikCal) {
@@ -51,7 +40,7 @@ export default function App() {
       </h1>
 
       <p className="text-3xl md:text-4xl font-semibold mb-4 drop-shadow">
-        💖 {buguneKadarGecenGun} gün geçti...
+        💖 7670 gün geçti...
       </p>
 
       <p className="text-2xl font-bold  md:text-2xl mb-10 mt-4 drop-shadow">
