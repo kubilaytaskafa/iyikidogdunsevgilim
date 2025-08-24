@@ -35,10 +35,9 @@ export default function App() {
         {muzikCal ? "🔇 Sesi Kapat" : "🔊 Sesi Aç"}
       </button>
 
-      <h1 className="text-4xl mt-12 md:text-5xl font-bold mb-6 drop-shadow-xl">
-        Bir prensesin doğuşunun üzerinden...
+      <h1 className="text-4xl mt-12 md:text-5xl font-bold mb-2 drop-shadow-xl">
+        Bir Prensesin Doğuşunun üzerinden
       </h1>
-
       <p className="text-3xl md:text-4xl font-semibold mb-4 drop-shadow">
         💖 7669 gün geçti...
       </p>
